@@ -7,7 +7,8 @@
     "build": "rm -rf dist && parcel build src/index.html --no-source-maps --public-url=.",
     "lint": "eslint src/",
     "lint:fix": "eslint src/ --fix",
-    "lint:styles": "@stylelint \"**/*.scss\""
+    "lint-styles": "stylelint \"**/*.scss\"",
+    "lint-styles:fix": "stylelint \"**/*.scss\" --fix"
   },
   "author": "Milesq",
   "license": "MIT",
@@ -22,6 +23,8 @@
     "eslint-plugin-prettier": "^3.1.2",
     "parcel-bundler": "^1.12.4",
     "prettier": "^2.0.4",
-    "sass": "^1.26.3"
+    "sass": "^1.26.3",
+    "stylelint": "^13.3.1",
+    "stylelint-config-sass-guidelines": "^7.0.0"
   }
 }
