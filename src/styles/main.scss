@@ -1,14 +1,54 @@
+@use 'mixins';
 @import '../../node_modules/normalize.css/normalize.css';
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
 
 .parallax-container {
+  background-attachment: fixed;
   background-blend-mode: multiply;
   background-color: #999;
   background-image: url('../assets/bg.jpg');
   background-position-y: -200px;
   background-repeat: no-repeat;
   background-size: cover;
+  color: #fff;
+  display: block;
 
   min-height: 65vh;
+}
+
+.menu-bar {
+  align-items: center;
+  display: flex;
+  font-size: 1.4em;
+  justify-content: space-around;
+
+  &__logo {
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+}
+
+.content {
+  @include mixins.center;
+  flex-direction: column;
+  font-family: 'Dosis', sans-serif;
+  height: 600px;
+
+  &__header {
+    font-size: 70px;
+    text-align: center;
+  }
+
+  .video-link {
+    color: #ff0;
+    cursor: pointer;
+    font-size: 24px;
+    transition: 0.45s color ease-in;
+
+    &:hover {
+      color: #fff;
+    }
+  }
 }
 
 .main-menu {
