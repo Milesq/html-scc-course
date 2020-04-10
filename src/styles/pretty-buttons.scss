@@ -1,0 +1,25 @@
+@use 'vars';
+
+.pretty-button {
+  background-color: #fff;
+  border: 0;
+  box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  margin: 0;
+  padding: 12px;
+  text-transform: uppercase;
+  transition: 0.15s all ease-in;
+
+  &:hover {
+    background: #000;
+    box-shadow: none;
+    color: #fff;
+  }
+
+  &--yellow {
+    background-color: vars.$primary-color;
+    color: #fff;
+  }
+}
