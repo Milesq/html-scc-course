@@ -1,3 +1,5 @@
+@use 'vars';
+
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -27,7 +29,7 @@
     padding: 10px;
 
     &--secondary {
-      background: #f7ca44;
+      background: vars.$primary-color;
       font-size: 1.6em;
       padding: 50px;
     }
