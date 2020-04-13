@@ -1,0 +1,61 @@
+@use 'sass:color';
+@use 'sass:map';
+
+@use 'vars';
+@use 'mixins';
+
+/* stylelint-disable */
+$technologies: [(
+    'name': 'js',
+    'color': #f0db4f,
+  ),
+  (
+    'name': 'vue',
+    'color': #41b883,
+  ),
+  (
+      'name': 'sass',
+      'color': #cd6799,
+    )
+    ];
+/* stylelint-enable */
+
+.tile {
+  display: flex;
+
+  &__icon {
+    color: vars.$primary-color;
+    font-size: 3rem;
+
+    @each $technology in $technologies {
+      &--#{map.get($technology, 'name')} {
+        color: map.get($technology, 'color');
+      }
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__link {
+    color: vars.$primary-color;
+    margin-top: 30px;
+    text-decoration: solid;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__icon,
+  &__content {
+    margin: 10px;
+  }
+}
+
+.tile-wrapper {
+  @include mixins.center;
+  margin-top: 15vh;
+}

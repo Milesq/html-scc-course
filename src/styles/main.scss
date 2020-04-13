@@ -1,9 +1,11 @@
 @import '../../node_modules/normalize.css/normalize.css';
-@import '../../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css';
-@import '../../node_modules/@fortawesome/fontawesome-free/css/regular.css';
+@import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+// @import '../../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css';
+// @import '../../node_modules/@fortawesome/fontawesome-free/css/regular.css';
 
 @import './parralax';
 @import './pretty-buttons';
+@import './tile';
 @import './about-us';
 
 body {
@@ -30,4 +32,8 @@ body {
 .big-header {
   font-family: overpass;
   font-size: 5rem;
+}
+
+.content-wrapper {
+  padding: 0 15vw;
 }
