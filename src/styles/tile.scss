@@ -4,21 +4,16 @@
 @use 'vars';
 @use 'mixins';
 
-/* stylelint-disable */
-$technologies: [(
-    'name': 'js',
-    'color': #f0db4f,
-  ),
-  (
-    'name': 'vue',
-    'color': #41b883,
-  ),
-  (
-      'name': 'sass',
-      'color': #cd6799,
-    )
-    ];
-/* stylelint-enable */
+$technologies: (
+  'name': 'js',
+  'color': #f0db4f,
+), (
+  'name': 'vue',
+  'color': #41b883,
+), (
+  'name': 'sass',
+  'color': #cd6799,
+);
 
 .tile {
   display: flex;
